@@ -34,3 +34,15 @@ Index
     b. Code deployment :
         i. The code saved in 'Langchain QA Bot with Llama 2' file is a Google colab file which can be reused in Google colab environment as is.
 
+5.	Scalability, Performance and Security 
+	a.	Scalability : 
+		i.	We can scalability of models, we can use distributed computing. 
+		ii.	We can also separate the current application hosting and new model updates on separate machines and switch the application to newer model machine when it is ready. 
+		iii.	Distributed computing on different machines with powerful machines using CUDA like architecture would be performant for large models.
+	b.	Performance : 
+		i.	We have used T4- GPU with CUDA and loaded the model on GPU for faster execution.  
+		ii.	Normal CPU would take much time to process the model as compared to GPU. 
+		iii.	Sometimes the CPU crashed while loading the model.
+	c.	Security : 
+		i.	For security, we can use Azure key vault for storing the API keys, tokens and accessing them via keys. 
+		ii.	We can also use Environment variables to store the API keys and tokens, but it wont be as secure as using any Cloud based key-value storing service.
